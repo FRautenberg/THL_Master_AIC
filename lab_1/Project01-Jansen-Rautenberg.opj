@@ -40,10 +40,7 @@
       (Path "Design Resources"
          "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn"
          "SCHEMATIC1")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -54,7 +51,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 78 1714 78 537")
-        (Scroll "904 932")
+        (Scroll "904 892")
         (Zoom "400")
         (Occurrence "/"))
       (Path
@@ -80,9 +77,9 @@
          ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc-characteristic-output.sim"
         (DisplayName "-")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim"
         (DisplayName "SCHEMATIC1-dc charac output")
-        (Type "PSpice Profile")))))
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim"))))
