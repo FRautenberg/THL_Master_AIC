@@ -1,0 +1,88 @@
+(ExpressProject "Project01-Jansen-Rautenberg"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\project01-jansen-rautenberg.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\project01-jansen-rautenberg-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN
+      (FullPartName "MbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (MPSSessionName "Finn")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn")
+      (Path "Design Resources"
+         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 1714 78 537")
+        (Scroll "904 932")
+        (Zoom "400")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\FINN\DOCUMENTS\GITHUB\MASTER-THL-AIC\LAB_1\PROJECT01-JANSEN-RAUTENBERG.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "..\pspice_models\tsmc_250nm.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\pspice_models\tsmc_250nm.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc characteristic.sim"
+        (DisplayName "SCHEMATIC1-DC Characteristic")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc-characteristic-output.sim"
+        (DisplayName "-")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim"
+        (DisplayName "SCHEMATIC1-dc charac output")
+        (Type "PSpice Profile")))))
