@@ -12,9 +12,34 @@
     (RootChangedForceReNetlist "x"))
   (Folder "Outputs"
     (File ".\project01-jansen-rautenberg-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\project01-jansen-rautenberg-pspicefiles\lab1-2\lab1-2.net"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (0
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
@@ -36,11 +61,16 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn")
+         "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn")
       (Path "Design Resources"
-         "C:\Users\Finn\Documents\GitHub\Master-THL-AIC\lab_1\project01-jansen-rautenberg.dsn"
-         "SCHEMATIC1")
-      (Path "Outputs"))
+         "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn"
+         "lab1-2")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn"
+         "lab1-2" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -50,13 +80,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 1714 78 537")
-        (Scroll "904 892")
-        (Zoom "400")
+        (Placement "44 2 3 -1 -1 -8 -31 78 1408 78 399")
+        (Scroll "90 258")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "C:\USERS\FINN\DOCUMENTS\GITHUB\MASTER-THL-AIC\LAB_1\PROJECT01-JANSEN-RAUTENBERG.DSN")
-      (Schematic "SCHEMATIC1")
+      (Schematic "lab1-2")
       (Page "PAGE1")))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
@@ -70,16 +100,16 @@
       (Sort User))
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc characteristic.sim"
-        (DisplayName "SCHEMATIC1-DC Characteristic")
+         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\bias.sim"
+        (DisplayName "lab1-2-bias")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc-characteristic-output.sim"
-        (DisplayName "-")
+         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\timedomian.sim"
+        (DisplayName "lab1-2-timedomian")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim"
-        (DisplayName "SCHEMATIC1-dc charac output")
+         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\dc bias point.sim"
+        (DisplayName "lab1-2-dc bias point")
         (Type "PSpice Profile"))
       (ActiveProfile
-         ".\project01-jansen-rautenberg-pspicefiles\schematic1\dc charac output.sim"))))
+         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\timedomian.sim"))))
