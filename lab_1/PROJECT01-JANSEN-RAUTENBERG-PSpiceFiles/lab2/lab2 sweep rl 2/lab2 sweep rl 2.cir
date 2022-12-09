@@ -1,0 +1,20 @@
+** Profile: "lab2-lab2 sweep rl 2"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab2\lab2 sweep rl 2.sim ] 
+
+** Creating circuit file "lab2 sweep rl 2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/finn/documents/github/master-thl-aic/pspice_models/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC DEC V_Vt 0.1 3.3 1000 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab2.net" 
+
+
+.END

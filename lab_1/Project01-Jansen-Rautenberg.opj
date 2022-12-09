@@ -8,29 +8,35 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
     (RootChangedForceReNetlist "x"))
-  (Folder "Outputs"
-    (File ".\project01-jansen-rautenberg-pspicefiles\schematic1\schematic1.net"
-      (Type "Report"))
-    (File ".\project01-jansen-rautenberg-pspicefiles\lab1-2\lab1-2.net"
-      (Type "Report")))
+  (Folder "Outputs")
   (Folder "Referenced Projects")
   (PartMRUSelector
-    (VSIN
-      (FullPartName "VSIN.Normal")
+    (PARAM
+      (FullPartName "PARAM.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
+    (IDC
+      (FullPartName "IDC.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
@@ -64,13 +70,14 @@
          "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn")
       (Path "Design Resources"
          "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn"
+         "lab2")
+      (Path "Design Resources"
+         "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn"
          "lab1-2")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg.dsn"
-         "lab1-2" "PAGE1"))
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -80,13 +87,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 1408 78 399")
-        (Scroll "90 258")
-        (Zoom "200")
+        (Placement "44 2 3 -1 -1 -8 -31 130 1114 130 498")
+        (Scroll "-61 195")
+        (Zoom "174")
         (Occurrence "/"))
       (Path
          "C:\USERS\FINN\DOCUMENTS\GITHUB\MASTER-THL-AIC\LAB_1\PROJECT01-JANSEN-RAUTENBERG.DSN")
-      (Schematic "lab1-2")
+      (Schematic "lab2")
       (Page "PAGE1")))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
@@ -99,17 +106,9 @@
     (Folder "Include Files"
       (Sort User))
     (Folder "Simulation Profiles"
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\bias.sim"
-        (DisplayName "lab1-2-bias")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\timedomian.sim"
-        (DisplayName "lab1-2-timedomian")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\dc bias point.sim"
-        (DisplayName "lab1-2-dc bias point")
-        (Type "PSpice Profile"))
       (ActiveProfile
-         ".\project01-jansen-rautenberg-pspicefiles\lab1-2\timedomian.sim"))))
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab 2 dc bias.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab 2 dc bias.sim"
+        (DisplayName "lab2-lab 2 dc bias")
+        (Type "PSpice Profile")))))
