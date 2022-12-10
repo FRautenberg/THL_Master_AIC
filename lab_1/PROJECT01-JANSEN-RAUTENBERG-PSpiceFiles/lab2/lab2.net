@@ -9,4 +9,4 @@ M_M1         OUT G 0 0 nmos_tsmc
 + W=1u          
 + M=1
 I_Iref         VCC G DC 50uAdc  
-V_Vt         OUT 0 DC 1.5Vdc AC 1Vac 
+V_Vt         OUT 0 DC 0.1Vdc AC 1Vac 

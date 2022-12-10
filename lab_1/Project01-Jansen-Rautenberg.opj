@@ -8,11 +8,18 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
     (RootChangedForceReNetlist "x"))
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\project01-jansen-rautenberg-pspicefiles\lab2\lab2.net"
+      (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (PARAM
       (FullPartName "PARAM.Normal")
       (LibraryName
@@ -22,11 +29,6 @@
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (VAC
-      (FullPartName "VAC.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (IDC
       (FullPartName "IDC.Normal")
@@ -88,7 +90,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 130 1114 130 498")
-        (Scroll "-61 195")
+        (Scroll "-61 235")
         (Zoom "174")
         (Occurrence "/"))
       (Path
@@ -106,9 +108,21 @@
     (Folder "Include Files"
       (Sort User))
     (Folder "Simulation Profiles"
-      (ActiveProfile
-         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab 2 dc bias.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\project01-jansen-rautenberg-pspicefiles\lab2\lab 2 dc bias.sim"
         (DisplayName "lab2-lab 2 dc bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab 2 rl sweep.sim"
+        (DisplayName "lab2-lab 2 RL sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab2 sweep vt.sim"
+        (DisplayName "lab2-lab2 sweep Vt")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab2 ac small signal rout.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\project01-jansen-rautenberg-pspicefiles\lab2\lab2 ac small signal rout.sim"
+        (DisplayName "lab2-lab2 ac small signal rout")
         (Type "PSpice Profile")))))
