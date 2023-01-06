@@ -87,19 +87,8 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 208 1550 208 667")
-        (Scroll "-274 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\FINN\DOCUMENTS\GITHUB\MASTER-THL-AIC\LAB_3\PSPICE\LAB3-CASCODE-COMPARISSON.DSN")
-      (Schematic "lab3 simp")
-      (Page "Lab3 simp casc")))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0)))
   (Folder "PSpice Resources"
     (Folder "Model Libraries"
       (Sort User)
@@ -126,4 +115,6 @@
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\lab3-cascode-comparisson-pspicefiles\lab3 optimzed\dc sweep.sim"
         (DisplayName "lab3 optimzed-dc sweep")
-        (Type "PSpice Profile")))))
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\lab3-cascode-comparisson-pspicefiles\lab3 simp\dc sweep vout.sim"))))
