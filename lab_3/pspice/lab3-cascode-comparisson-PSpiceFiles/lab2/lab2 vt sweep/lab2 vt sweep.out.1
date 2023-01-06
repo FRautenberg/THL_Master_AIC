@@ -1,0 +1,51 @@
+
+**** 12/09/22 13:44:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab2-lab2 vt sweep"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab2 vt sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/finn/documents/github/master-thl-aic/pspice_models/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN Vt 0 3 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab2.net" 
+
+
+
+**** INCLUDING lab2.net ****
+* source PROJECT01-JANSEN-RAUTENBERG
+V_VDDC         VCC 0 3.3Vdc
+M_M2         IN IN 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+M_M1         OUT IN 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_I1         VCC IN DC 50uAdc  
+V_V1         OUT 0 DC Vt AC 1Vac 
+----------------------$
+ERROR(ORPSIM-16492): Missing value
+
+**** RESUMING "lab2 vt sweep.cir" ****
+.END
+

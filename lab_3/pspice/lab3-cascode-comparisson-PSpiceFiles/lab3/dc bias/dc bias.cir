@@ -1,0 +1,20 @@
+** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\dc bias.sim ] 
+
+** Creating circuit file "dc bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab3.net" 
+
+
+.END

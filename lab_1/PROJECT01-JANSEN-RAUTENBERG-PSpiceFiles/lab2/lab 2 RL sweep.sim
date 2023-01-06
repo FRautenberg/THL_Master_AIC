@@ -3,7 +3,7 @@
 @Settings: 1 1
 @General:
 ProfileName= "lab 2 RL sweep" 
-ProfileFile= "lab 2 RL sweep.sim" 
+ProfileFile= "lab 2 rl sweep.sim" 
 Connectivity= "lab2.net" 
 NetlistFile= "lab 2 RL sweep.cir" 
 DataFile= "lab 2 RL sweep.dat" 
@@ -130,7 +130,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
-+1 "" 
++1 "-1" 
 +2 "-1" 
 +3 "-1" 
 +4 "1" 

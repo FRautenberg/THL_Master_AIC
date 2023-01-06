@@ -1,0 +1,7 @@
+* source PROJECT01-JANSEN-RAUTENBERG
+M_M1         N00144 N00140 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VGDC         N00140 0 0.5Vdc
+V_VDDC         N00144 0 0.5Vdc

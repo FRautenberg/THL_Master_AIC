@@ -1,0 +1,61 @@
+
+**** 01/06/23 11:31:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3 simp-dc sweep Vout"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceF
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc sweep Vout.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_VDCout 0 3 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab3 simp.net" 
+
+
+
+**** INCLUDING "lab3 simp.net" ****
+* source LAB3-CASCODE-COMPARISSON
+M_M3         N02193 N02193 N01997 N01997 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDCout         VOUTPUT 0 {Vout}
+M_M1         N01997 N01997 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDDC         VCC 0 3.3Vdc
+M_M4         VOUTPUT N02193 N00169 N00169 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_I1         VCC N02193 DC 10u  
+M_M2         N00169 N01997 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+.PARAM  rout=1vdc
+
+**** RESUMING "dc sweep Vout.cir" ****
+.END
+
+
+ERROR(ORPSIM-15167): Undefined parameter: Vout.
+

@@ -1,0 +1,204 @@
+
+**** 12/02/22 14:05:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab1-2-bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab1-2\bias
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/finn/documents/github/master-thl-aic/pspice_models/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.TF V([OUT]) V_VGDC
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab1-2.net" 
+
+
+
+**** INCLUDING lab1-2.net ****
+* source PROJECT01-JANSEN-RAUTENBERG
+M_M1         OUT N00140 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VGDC         N00140 0 0.5Vdc
+V_VDDC         N00150 0 1.8Vdc
+R_R2         OUT N00150  56.2k TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 12/02/22 14:05:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab1-2-bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab1-2\bias
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nmos_tsmc       
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   31.622780E-12 
+          WD   12.328810E-09 
+         VTO     .423825     
+          KP  250.104800E-06 
+       GAMMA     .431731     
+         PHI     .7          
+      LAMBDA    0            
+         RSH    4.062439E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .5          
+        PBSW     .5          
+          CJ    1.812110E-03 
+        CJSW  534.133700E-12 
+          MJ     .328255     
+        MJSW     .5          
+        CGSO  620.000000E-12 
+        CGDO  620.000000E-12 
+        CGBO  100.000000E-12 
+        NSUB  100.000000E+15 
+         NFS    1.000000E+12 
+         TOX    5.700000E-09 
+          XJ  300.000000E-09 
+          UO  425.6467       
+       UCRIT   10.000000E+03 
+        VMAX   82.878510E+03 
+       DELTA    0            
+       THETA     .175405     
+         ETA    0            
+       KAPPA     .168678     
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 12/02/22 14:05:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab1-2-bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab1-2\bias
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .8967  (N00140)     .5000 (N00150)    1.8000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VGDC       0.000E+00
+    V_VDDC      -1.607E-05
+
+    TOTAL POWER DISSIPATION   2.89E-05  WATTS
+
+
+**** 12/02/22 14:05:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab1-2-bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab1-2\bias
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M1      
+MODEL        nmos_tsmc 
+ID           1.61E-05 
+VGS          5.00E-01 
+VDS          8.97E-01 
+VBS          0.00E+00 
+VTH          3.28E-01 
+VDSAT        1.58E-01 
+Lin0/Sat1   -1.00E+00 
+if          -1.00E+00 
+ir          -1.00E+00 
+TAU         -1.00E+00 
+GM           1.32E-04 
+GDS          1.95E-06 
+GMB          1.15E-05 
+CBD          0.00E+00 
+CBS          0.00E+00 
+CGSOV        6.05E-16 
+CGDOV        6.05E-16 
+CGBOV        2.50E-17 
+CGS          9.85E-16 
+CGD          0.00E+00 
+CGB          0.00E+00 
+
+
+
+
+ ****     SMALL-SIGNAL CHARACTERISTICS
+
+
+      V(OUT)/V_VGDC = -6.702E+00
+
+      INPUT RESISTANCE AT V_VGDC =  1.000E+20
+
+      OUTPUT RESISTANCE AT V(OUT) =  5.064E+04
+
+
+          JOB CONCLUDED
+
+**** 12/02/22 14:05:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab1-2-bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab1-2\bias
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

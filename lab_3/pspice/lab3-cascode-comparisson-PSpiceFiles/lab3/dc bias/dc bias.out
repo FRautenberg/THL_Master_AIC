@@ -1,0 +1,204 @@
+
+**** 01/06/23 11:17:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab3.net" 
+
+
+
+**** INCLUDING lab3.net ****
+* source LAB3-CASCODE-COMPARISSON
+M_M3         N02193 N02193 N01997 N01997 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDDC1         VOUT 0 3Vdc
+M_M1         N01997 N01997 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDDC         VCC 0 3.3Vdc
+M_M4         VOUT N02193 N00169 N00169 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_I1         VCC N02193 DC 10u  
+M_M2         N00169 N01997 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+
+**** RESUMING "dc bias.cir" ****
+.END
+
+**** 01/06/23 11:17:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nmos_tsmc       
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   31.622780E-12 
+          WD   12.328810E-09 
+         VTO     .423825     
+          KP  250.104800E-06 
+       GAMMA     .431731     
+         PHI     .7          
+      LAMBDA    0            
+         RSH    4.062439E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .5          
+        PBSW     .5          
+          CJ    1.812110E-03 
+        CJSW  534.133700E-12 
+          MJ     .328255     
+        MJSW     .5          
+        CGSO  620.000000E-12 
+        CGDO  620.000000E-12 
+        CGBO  100.000000E-12 
+        NSUB  100.000000E+15 
+         NFS    1.000000E+12 
+         TOX    5.700000E-09 
+          XJ  300.000000E-09 
+          UO  425.6467       
+       UCRIT   10.000000E+03 
+        VMAX   82.878510E+03 
+       DELTA    0            
+       THETA     .175405     
+         ETA    0            
+       KAPPA     .168678     
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 01/06/23 11:17:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    3.3000  ( VOUT)    3.0000  (N00169)     .4740 (N01997)     .4558     
+
+(N02193)     .9117 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDDC1     -1.003E-05
+    V_VDDC      -1.000E-05
+
+    TOTAL POWER DISSIPATION   6.31E-05  WATTS
+
+
+**** 01/06/23 11:17:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M3        M_M1        M_M4        M_M2      
+MODEL        nmos_tsmc   nmos_tsmc   nmos_tsmc   nmos_tsmc 
+ID           1.00E-05    1.00E-05    1.00E-05    1.00E-05 
+VGS          4.56E-01    4.56E-01    4.38E-01    4.56E-01 
+VDS          4.56E-01    4.56E-01    2.53E+00    4.74E-01 
+VBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+VTH          3.28E-01    3.28E-01    3.28E-01    3.28E-01 
+VDSAT        1.30E-01    1.30E-01    1.18E-01    1.30E-01 
+Lin0/Sat1   -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00   -1.00E+00   -1.00E+00 
+GM           1.07E-04    1.07E-04    1.23E-04    1.07E-04 
+GDS          1.64E-06    1.64E-06    7.93E-07    1.61E-06 
+GMB          9.34E-06    9.34E-06    1.08E-05    9.37E-06 
+CBD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGSOV        6.05E-16    6.05E-16    6.05E-16    6.05E-16 
+CGDOV        6.05E-16    6.05E-16    6.05E-16    6.05E-16 
+CGBOV        2.50E-17    2.50E-17    2.50E-17    2.50E-17 
+CGS          9.85E-16    9.85E-16    9.85E-16    9.85E-16 
+CGD          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+**** 01/06/23 11:17:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,21 @@
+* source LAB3-CASCODE-COMPARISSON
+M_M3         BIASTOP BIASTOP N01997 N01997 nmos_tsmc  
++ L={L_var}  
++ W={W_var}          
++ M=1
+V_VDCout         VOUTPUT 0 {Vout}
+M_M1         N01997 N01997 0 0 nmos_tsmc  
++ L={L_var}  
++ W={W_var}          
++ M=1
+V_VDDC         VCC 0 3.3Vdc
+M_M4         VOUTPUT BIASTOP N00169 N00169 nmos_tsmc  
++ L={L_var}  
++ W={W_var}          
++ M=1
+I_I1         VCC BIASTOP DC 10u  
+M_M2         N00169 N01997 0 0 nmos_tsmc  
++ L={L_var}  
++ W={W_var}          
++ M=1
+.PARAM  l_var=250n vout=1.5vdc w_var=1u

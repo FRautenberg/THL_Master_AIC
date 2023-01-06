@@ -1,0 +1,12 @@
+* source PROJECT01-JANSEN-RAUTENBERG
+V_VDDC         VCC 0 3.3Vdc
+M_M2         G G 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+M_M1         OUT G 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_Iref         VCC G DC 50uAdc  
+V_Vt         OUT 0 DC 0.1Vdc AC 1Vac 

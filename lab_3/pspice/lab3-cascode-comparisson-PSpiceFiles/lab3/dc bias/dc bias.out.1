@@ -1,0 +1,69 @@
+
+**** 01/06/23 11:16:16 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab3-dc bias"  [ c:\users\finn\documents\github\master-thl-aic\lab_3\pspice\lab3-cascode-comparisson-PSpiceFiles\lab3\d
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../MovedFiles/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab3.net" 
+
+
+
+**** INCLUDING lab3.net ****
+* source LAB3-CASCODE-COMPARISSON
+M_M3         N02193 N02193 N01997 N01997 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDDC1         VOUT 0 3Vdc
+M_M1         N01997 N01997 N02086 N02086 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+V_VDDC         VCC 0 3.3Vdc
+M_M4         VOUT N02193 N00169 N00169 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_I1         VCC N02193 DC 0Adc  
+M_M2         N00169 N01997 N01908 N01908 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+
+**** RESUMING "dc bias.cir" ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file tsmc_250nm.ind for library file tsmc_250nm.lib.
+
+INFO(ORPSIM-15422): Making new index file tsmc_250nm.ind for library file tsmc_250nm.lib.
+
+Index has 2 entries from 1 file(s).
+
+ERROR(ORPSIM-15142): Node N02193 is floating
+
+ERROR(ORPSIM-15142): Node N01997 is floating
+
+ERROR(ORPSIM-15142): Node N02086 is floating
+

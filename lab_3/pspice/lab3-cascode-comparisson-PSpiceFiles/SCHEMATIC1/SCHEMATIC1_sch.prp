@@ -1,0 +1,81 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("MbreakN")
+        ("VDC")
+    )
+    ("instances"
+        ("M1"
+            ("device_name"	"MbreakN")
+            ("pspice_path"	"M_M1")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1u")
+                    ("pspice_param"	"W")
+                )
+                ("M"
+                    ("value"	"1")
+                    ("pspice_param"	"M")
+                )
+                ("L"
+                    ("value"	"250n")
+                    ("pspice_param"	"L")
+                )
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
+                )
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
+                )
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
+                )
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
+                )
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
+                )
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+            )
+        )
+        ("VGDC"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VGDC")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("VDDC"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VDDC")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+    )
+)

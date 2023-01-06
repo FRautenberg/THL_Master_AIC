@@ -1,0 +1,124 @@
+
+**** 12/09/22 18:38:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab2-lab2 sweep Vt"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab2 sweep Vt.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/finn/documents/github/master-thl-aic/pspice_models/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vt 0 3.3 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab2.net" 
+
+
+
+**** INCLUDING lab2.net ****
+* source PROJECT01-JANSEN-RAUTENBERG
+V_VDDC         VCC 0 3.3Vdc
+M_M2         G G 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+M_M1         OUT G 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_Iref         VCC G DC 50uAdc  
+V_Vt         OUT 0 DC 1.5Vdc AC 1Vac 
+
+**** RESUMING "lab2 sweep Vt.cir" ****
+.END
+
+**** 12/09/22 18:38:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab2-lab2 sweep Vt"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab2
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nmos_tsmc       
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   31.622780E-12 
+          WD   12.328810E-09 
+         VTO     .423825     
+          KP  250.104800E-06 
+       GAMMA     .431731     
+         PHI     .7          
+      LAMBDA    0            
+         RSH    4.062439E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .5          
+        PBSW     .5          
+          CJ    1.812110E-03 
+        CJSW  534.133700E-12 
+          MJ     .328255     
+        MJSW     .5          
+        CGSO  620.000000E-12 
+        CGDO  620.000000E-12 
+        CGBO  100.000000E-12 
+        NSUB  100.000000E+15 
+         NFS    1.000000E+12 
+         TOX    5.700000E-09 
+          XJ  300.000000E-09 
+          UO  425.6467       
+       UCRIT   10.000000E+03 
+        VMAX   82.878510E+03 
+       DELTA    0            
+       THETA     .175405     
+         ETA    0            
+       KAPPA     .168678     
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+**** 12/09/22 18:38:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab2-lab2 sweep Vt"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\lab2
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

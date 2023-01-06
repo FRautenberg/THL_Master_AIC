@@ -1,0 +1,10 @@
+.ALIASES
+M_M1            M1(d=OUT g=IN s=0 b=0 ) CN @PROJECT01-JANSEN-RAUTENBERG.lab1-2(sch_1):INS264@BREAKOUT.MbreakN.Normal(chips)
+V_VGDC          VGDC(+=N00584 -=0 ) CN @PROJECT01-JANSEN-RAUTENBERG.lab1-2(sch_1):INS224@SOURCE.VDC.Normal(chips)
+V_VDDC          VDDC(+=VCC -=0 ) CN @PROJECT01-JANSEN-RAUTENBERG.lab1-2(sch_1):INS244@SOURCE.VDC.Normal(chips)
+R_R2            R2(1=OUT 2=VCC ) CN @PROJECT01-JANSEN-RAUTENBERG.lab1-2(sch_1):INS347@ANALOG.R.Normal(chips)
+V_V1            V1(+=IN -=N00584 ) CN @PROJECT01-JANSEN-RAUTENBERG.lab1-2(sch_1):INS1690@SOURCE.VSIN.Normal(chips)
+_    _(in=IN)
+_    _(out=OUT)
+_    _(VCC=VCC)
+.ENDALIASES

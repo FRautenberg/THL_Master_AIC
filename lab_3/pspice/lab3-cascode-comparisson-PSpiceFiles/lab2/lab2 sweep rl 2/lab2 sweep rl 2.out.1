@@ -1,0 +1,52 @@
+
+**** 12/09/22 13:16:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "lab2-lab2 sweep rl 2"  [ c:\users\finn\documents\github\master-thl-aic\lab_1\project01-jansen-rautenberg-PSpiceFiles\la
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab2 sweep rl 2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/finn/documents/github/master-thl-aic/pspice_models/tsmc_250nm.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Finn\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC DEC PARAM RL 1k 100MEG 100 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\lab2.net" 
+
+
+
+**** INCLUDING lab2.net ****
+* source PROJECT01-JANSEN-RAUTENBERG
+R_R2         OUT VCC  {RL} TC=0,0 
+V_VDDC         VCC 0 3.3Vdc
+M_M2         N02038 IN 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+M_M1         OUT IN 0 0 nmos_tsmc  
++ L=250n  
++ W=1u          
++ M=1
+I_I1         VCC N02038 DC 50uAdc  
+.PARAM  rl=1k
+
+**** RESUMING "lab2 sweep rl 2.cir" ****
+.END
+
+ERROR(ORPSIM-15142): Node IN is floating
+
