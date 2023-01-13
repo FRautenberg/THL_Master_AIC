@@ -1,0 +1,44 @@
+qia baut folded casod
+
+Milady reicht wenn miller opamp bauen
+spätens 2 woche SS abgabe
+
+2er grupper Miller opamp mit tsmc modell
+
+milady okay wenn zb wöchentrlich treffen
+sehr viele beschreibungen
+moderne schaltung viele standart schaltung wie folded cascode
+
+90% sind miller opamp oder folded cascode
+
+folded cascode machen wir
+Phase margin 45° wäre schon gut, nicht ohne Cc erreichbar
+jeder pol auf rechter seite immer instabil
+
+
+jede person präsi 10 min
+jeder person zeigen was selber gemacht hat
+dazu dann 5 min fragen je person
+
+model nachvorlziehen und simulieren von ihren mit ihrem modell
+milady quick and dirty zwischenstand schicken
+
+verstärkung erreich zb 40db
+-40°C 20°C und 100°C und
+phasemargin min 45°
+PSRR simulieren 
+manchmal mit modell nicht möglich ist
+
+
+phasemargin > 45° Verstärung 40dB über gesamte temperaturbereich
+spannung von qian = 3,3V
+
+
+anleitung für algorithmisch erstellung von verstärker
+ev mit buffer was besser machen und mit 2 anderen wegen aber klassische herangehensweise
+Stabilität schwiergisten von 0 bis unendlcih
+wir sollen auch miller machen
+Update: Alle arbeiten zusammen als Gruppenleistung und jeder muss jedem seine Änderungen zeigen
+
+
+
