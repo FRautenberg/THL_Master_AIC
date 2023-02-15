@@ -1,12 +1,12 @@
 qia baut folded casod
 
 Milady reicht wenn miller opamp bauen
-spätens 2 woche SS abgabe
+spätens 2. woche  in SS abgabe
 
 2er grupper Miller opamp mit tsmc modell
 
 milady okay wenn zb wöchentrlich treffen
-sehr viele beschreibungen
+sehr viele beschreibungen vorhanden im Netz
 moderne schaltung viele standart schaltung wie folded cascode
 
 90% sind miller opamp oder folded cascode

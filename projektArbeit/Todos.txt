@@ -1,0 +1,21 @@
+
+s
+Simulation
+- Miller Schaltung von Qian mit TSMC aufbauen mit ESB von OPAMP
+	- Operating Point: Prüfen, sind alle Transistoren in Sättingung
+	- Operating Point: Welche Verstärkung, Eingang Ausgangswiderstand?
+	- AC: Open loop aufbauen und Gain und phase margin ablesen
+	- AC: Wie können verschiedene Temperaturen gleichzeitig simuliert werden?
+	
+	
+Verständniss:
+- Was ist der Unterschied open und closed loop simulation model?
+- Wie können nachweisen, das alle Pole auf linker s-Ebene liegen?
+- Definition Phasenrand: Phase bei 0dB Verstärkung
+
+
+
+Frage:
+- Was abgeben für bestehen für Modul nötig?
+- Laborberichte?
+- bis zu welcher Frequenz 40dB
